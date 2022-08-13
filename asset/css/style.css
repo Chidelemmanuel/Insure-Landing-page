@@ -1,0 +1,179 @@
+:root{
+    --darkViolet: rgb(45, 38, 64);
+    --graYishBlue: rgb(149, 169, 198);
+    --veryDarkViolet: rgb(43, 39, 47);
+    --darkGrayishViolet:  rgb(131, 125, 135);
+    --white: rgb(250, 250, 250); 
+}
+@font-face {
+    font-family: "headerFont";
+    src: url("../fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: "karla";
+    src: url("../fonts/Karla/Karla-VariableFont_wght.ttf");
+}
+
+/* for debugging */
+.border {
+    outline: 2px solid black;
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "karla";
+}
+
+
+/* Configuration css */
+.headerText {
+    font-family: "headerFont";
+    font-weight: 700;
+}
+
+.padding-all {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.my-max-width {
+    max-width: 375px;
+    margin: auto;
+}
+
+
+
+/* ==================================================== */
+/* For mobiles  */
+/* The nav bar section for mobiles */
+.nav-bar-section {
+    background: var(--white);
+    padding: 15px 0px;
+}
+
+
+.nav-bar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.desktop-nav {
+    display: none;
+    list-style-type: none;
+}
+
+.mobile-nav-section {
+    background: var(--darkViolet);
+    color: var(--white);
+    padding-top: 20px;
+    height: 88.2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+
+}
+
+.mobile-nav-container {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-nav-container > li {
+    font-weight: 700;
+    padding: 20px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mobile-nav-container > li:last-child {
+    border: 2px solid var(--white);
+}
+
+.mobile-image-nav {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.mobile-image-nav > img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 481px) {
+    .my-max-width {
+        max-width: 675px;
+        margin: auto;
+    }
+
+
+    .padding-all {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    
+}
+
+
+
+
+
+/* ========================================================= */
+/* laptop screens */
+
+@media (min-width: 800px) {
+    .my-max-width {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+
+    .padding-all {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .desktop-nav > li {
+        margin: 0px 20px;
+        text-transform: uppercase;
+        padding: 10px 20px;
+    }
+
+    .desktop-nav > li:last-child {
+        border: 1px solid black;
+    }
+
+    .mobile-nav-section {
+        display: none;
+    }
+}
