@@ -39,8 +39,8 @@ body {
 }
 
 .padding-all {
-    padding-left: 1rem;
     padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .my-max-width {
@@ -55,7 +55,8 @@ body {
 /* The nav bar section for mobiles */
 .nav-bar-section {
     background: var(--white);
-    padding: 15px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
@@ -67,7 +68,7 @@ body {
 }
 
 #btn {
-    display: block;
+    display: none;
 }
 
 
@@ -81,14 +82,14 @@ body {
     color: var(--white);
     padding-top: 20px;
     height: 88.2vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: space-between;
-    display: none;
+    overflow: hidden;
 }
 
-.mobile-nav-container:checked {
-    display: block;
+#btn:checked + .mobile-nav-section {
+    display: flex;
 }
 
 .mobile-nav-container {
